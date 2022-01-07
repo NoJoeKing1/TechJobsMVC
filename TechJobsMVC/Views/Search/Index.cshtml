@@ -1,8 +1,8 @@
 ﻿<div class="container body-content">
 
-    <h1>@ViewBag.title</h1>
+    @*<h1>@ViewBag.title</h1>*@
 
-    <form asp-controller="Search" asp-action="results" method="post">
+    <form method="post" asp-controller="Search" asp-action="results" >
         <h2>Search by:</h2>
 
         <p>
@@ -25,6 +25,7 @@
     </form>
 
     <hr />
+    </div>
 
     @{
         //TODO #4: Loop over the search results to display all job fields.
@@ -59,4 +60,3 @@
         }
     }
     
-</div>
